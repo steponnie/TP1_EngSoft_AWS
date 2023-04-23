@@ -1,1 +1,3 @@
-# TP1_EngSoft_AWS
+# Trabalho Prático 1: Amazon Web Services
+## Disciplina: Engenharia de Software
+## Alunos: -Stéphanie Fonseca de Oliveira Gomes Magalhães
