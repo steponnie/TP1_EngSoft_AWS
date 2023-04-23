@@ -1,3 +1,4 @@
 # Trabalho Prático 1: Amazon Web Services
+
 ## Disciplina: Engenharia de Software
-## Alunos: -Stéphanie Fonseca de Oliveira Gomes Magalhães
+## Alunos: Stéphanie Fonseca de Oliveira Gomes Magalhães
