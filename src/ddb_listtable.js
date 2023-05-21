@@ -1,4 +1,3 @@
-// Import required AWS SDK clients and commands for Node.js
 import { ListTablesCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 

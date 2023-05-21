@@ -1,7 +1,6 @@
 import { UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 
-// Set the parameters
 export const params = {
   TableName: "series",
   Key: {
