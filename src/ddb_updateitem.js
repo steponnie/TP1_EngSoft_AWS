@@ -1,15 +1,17 @@
+// atualiza item
+
 import { UpdateItemCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 
 export const params = {
-  TableName: "series",
-  Key: {
-    temporada: { S: "1" },
-    episodio: { N: "1" },
+  TableName: "Shows",
+  Key: { // chave primaria
+    Season: { N: "1" },
+    Episode: { N: "1" },
   },
-  UpdateExpression: "SET descricao = :value",
+  UpdateExpression: "SET Description = :value",
   ExpressionAttributeValues: {
-    ":value": { "S": "episodio piloto" },
+    ":value": { "S": "First Episode" },
   },
   ReturnValues: "ALL_NEW",
 };

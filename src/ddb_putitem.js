@@ -1,12 +1,14 @@
+// insere item na tabela
+
 import { PutItemCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 
 export const params = {
-  TableName: "series",
-  Item: {
-    "temporada": {"S": "1"},
-    "episodio": {"N": "1"},
-    "descricao": {"S": "primeiro episodio"}
+  TableName: "Shows", // nome da tabela
+  Item: { // item a ser inserido
+    "Season": {"N": "1"},
+    "Episode": {"N": "1"},
+    "Description": {"S": "Pilot"}
   },
 };
 

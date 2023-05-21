@@ -1,3 +1,5 @@
+// lista todas as tabelas
+
 import { ListTablesCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 

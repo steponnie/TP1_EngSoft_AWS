@@ -1,10 +1,10 @@
-// Create service client module using ES6 syntax.
+// Cria modulo service cliente usando sintaxe ES6
 import { DynamoDBClient } from "@aws-sdk/client-dynamodb";
 
-// Set the AWS Region.
-const REGION = "us-east-1"; //e.g. "us-east-1"
+// Define a regiao AWS
+const REGION = "us-east-1"; //ex: "us-east-1"
 
-// Create an Amazon DynamoDB service client object.
+// Cria um objeto Amazon DynamoBD
 const ddbClient = new DynamoDBClient({ region: REGION });
 
 export { ddbClient };

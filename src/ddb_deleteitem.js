@@ -1,11 +1,13 @@
+// apaga item
+
 import { DeleteItemCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 
 export const params = {
-    TableName: "series",
-    Key: {
-      "temporada": {"S": "1"},
-      "episodio": {"N": "1"},
+    TableName: "Shows", // nome da tabela
+    Key: { // chave primaria
+      "Season": {"N": "1"},
+      "Episode": {"N": "1"},
     },
   };
 

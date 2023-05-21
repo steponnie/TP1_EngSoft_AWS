@@ -1,26 +1,26 @@
-// Import required AWS SDK clients and commands for Node.js
+// cria tabela
+
 import { CreateTableCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
 
-// Set the parameters
 export const params = {
   AttributeDefinitions: [
     {
-      AttributeName: "Season", //ATTRIBUTE_NAME_1
-      AttributeType: "N", //ATTRIBUTE_TYPE
+      AttributeName: "Season", // nome do atributo
+      AttributeType: "N", // tipo do atributo
     },
     {
-      AttributeName: "Episode", //ATTRIBUTE_NAME_2
-      AttributeType: "N", //ATTRIBUTE_TYPE
+      AttributeName: "Episode", // nome do atributo
+      AttributeType: "N", // tipo do atributo
     },
   ],
   KeySchema: [
     {
-      AttributeName: "Season", //ATTRIBUTE_NAME_1
+      AttributeName: "Season", // primeiro atributo
       KeyType: "HASH",
     },
     {
-      AttributeName: "Episode", //ATTRIBUTE_NAME_2
+      AttributeName: "Episode", // segundo atributo
       KeyType: "RANGE",
     },
   ],
@@ -28,7 +28,7 @@ export const params = {
     ReadCapacityUnits: 1,
     WriteCapacityUnits: 1,
   },
-  TableName: "Shows", //TABLE_NAME
+  TableName: "Shows", // nome da tabela
   StreamSpecification: {
     StreamEnabled: false,
   },
