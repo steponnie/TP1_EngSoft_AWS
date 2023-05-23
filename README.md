@@ -60,7 +60,7 @@ Abra o terminal e digite o seguinte comando ```aws configure```
 
 Pronto, o AWS foi configurado!
 
-## Executando o código
+## Executando o código 
 
 __________________________________________________________________________________
 RASCUNHO 
