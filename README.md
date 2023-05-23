@@ -43,16 +43,13 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 4- Agora você deve baixar o AWS clicando [aqui](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). Depois de baixar, basta seguir os passos de instalação para o seu sistema operacional.
 
-5- Você deve ter o VScode instalado no computador. Abra-o e inicialize um terminal. Nele digite os seguinte comando
-
-                              ```aws --version```
+5- Você deve ter o VScode instalado no computador. Abra-o e inicialize um terminal. Nele digite os seguinte comando ```aws --version```
 
 Este comando serve como confirmação da instalação do AWS e ele deve mostrar a versão instalada no seu computador, se a instalação tiver sido bem sucedida.
 
 ## Configurando o AWS
 
-Abra o terminal e digite o seguinte comando
-                              ```aws configure```
+Abra o terminal e digite o seguinte comando ```aws configure```
                      
           *Colocar a Access key criada e clicar enter;
           *Colocar a Secret access key criada e clicar enter;
