@@ -65,7 +65,7 @@ Pronto, o AWS foi configurado!
 __________________________________________________________________________________
 RASCUNHO 
 no vscode:
-```
+```javascript
 export const params = {
   AttributeDefinitions: [
     {
