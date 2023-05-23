@@ -149,6 +149,21 @@ export const params = {
   ReturnValues: "ALL_NEW",
 };
 ```
+### Pegando um item da tabela
+A classe ddb_getitem.js pega um item contido na tabela.
+
+```TableName``` indica o nome da tabela e os valores de ```Key``` são a chave primaria que identifica o item.
+
+Essa classe retorna todos os valores contidos no item. Nesse exemplo ela retornaria a variável ```Description``` que não é uma chave. Para executar a classe use o comando ```node src/ddb_getitem.js``` no terminal.
+```js
+export const params = {
+    TableName: "Shows", // nome da tabela
+    Key: { // chave primaria
+      "Season": {"N": "1"},
+      "Episode": {"N": "1"},
+    },
+  };
+```
 ### Listando todas as tabelas
 A classe ddb_listtable.js, conforme o código abaixo, serve para listar todas as tabelas que estão no AWS. Para isso basta executar o comando node src/ddb_listtable.js que contém a chamada da classe e, assim, todas as tabelas serão listadas.
 ```js
