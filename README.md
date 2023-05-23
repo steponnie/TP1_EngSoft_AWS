@@ -109,6 +109,20 @@ export const params = {
   },
 };
 ```
+
+### Deletando um item da tabela
+Na classe ddb_deleteitem.js está o comando para deletar um item.
+```TableName``` indica o nome da tabela cujo item se quer deletar
+Dentro de ```Key``` deve-se indicar a chave usada para identificar o item. Nesse caso ```Season``` e ```Episode```.
+```
+export const params = {
+    TableName: "Shows", // nome da tabela
+    Key: { // chave primaria
+      "Season": {"N": "1"},
+      "Episode": {"N": "1"},
+    },
+  };
+```
         -criando a tabela, em ddb_createtable.js:
             *em AttributeName: nome dos atributos
             *em AttributeType: tipo, pode ser N (numerico, ou S (string)
