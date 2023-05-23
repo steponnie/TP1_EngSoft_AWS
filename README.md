@@ -200,26 +200,3 @@ export const run = async () => {
 };
 run();
 ```
-
-
-
-
-
-        -criando a tabela, em ddb_createtable.js:
-            *em AttributeName: nome dos atributos
-            *em AttributeType: tipo, pode ser N (numerico, ou S (string)
-            *em tableName: nome da tabela a ser criada
-        -povoando a tabela, em ddb_putitem.js:
-            *colocar o nome da tabela em TableName
-            *para cada elemento a ser adicionado criar um item com o nome das colunas especificados, o valor a ser inserido em cada coluna e seu tipo (string ou numero)
-        -para apagar elementos, em ddb_deleteitem.js:
-            *colocar o nome da tabela em TableName
-            *para cada elemento a ser deletado deve-se especificar o nome das duas colunas, o valor e tipo(string ou numero) que sera usado como chave para identificar o elemento.
-        -para atualizar elementos, em ddb_updateitem.js:
-            *colocar o nome da tabela em TableName
-            
-identificar o elemento a ser atualizado com o nome das colunas e o valor e tipo das chaves.*em UpdateExpression usar SET para trocar um elemento que não é uma das chaves*em ExpressionAttributeValues coloque o novo valor e tipo-para apagar tabelas, em ddb_deletetable.js:*coloque o nome da tabela em TableName-para listar as tabelas use ddb_listtable.js-para obter um item, em ddb_getitem.js:
-
--para obter um item, em ddb_getitem.js:
-            *colocar o nome da tabela em TableName
-            *colocar a chave primária   que identifica o item que é o nome das colunas e os valores e tipos.
