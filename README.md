@@ -96,7 +96,7 @@ export const params = {
   },
 };
 ```
-
+### Inserindo um item na tabela
 ```js
 export const params = {
   TableName: "Shows", // nome da tabela
