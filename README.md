@@ -101,8 +101,7 @@ export const params = {
 };
 ```
 ### Inserindo um item na tabela
-Para adicionar um item na tabela, abra a classe ddb_putitem.js, conforme o código abaixo, substitua o nome da tabela em ```TableName``` e altere os parâmetros do construtor ```Item``` de acordo com a tabela criada anteriormente. No terminal, execute o comando ```node src/ddb_putitem.js``` que contém a chamada da classe e os itens serão adicionados à tabela. Você pode adicionar mais de um item de uma vez criando mais de um construtor.
-
+Para adicionar um item na tabela, abra a classe ddb_putitem.js, conforme o código abaixo, substitua o nome da tabela em ```TableName``` e altere os parâmetros do construtor ```Item``` de acordo com a tabela criada anteriormente. No terminal, execute o comando ```node src/ddb_putitem.js``` que contém a chamada da classe e os itens serão adicionados à tabela. 
 ```js
 export const params = {
   TableName: "Shows", // nome da tabela
