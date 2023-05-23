@@ -150,7 +150,7 @@ export const params = {
 };
 ```
 ### Listando todas as tabelas
-
+A classe ddb_listtable.js, conforme o código abaixo, serve para listar todas as tabelas que estão no AWS. Para isso basta executar o comando node src/ddb_listtable.js que contém a chamada da classe e, assim, todas as tabelas serão listadas.
 ```js
 import { ListTablesCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
@@ -167,9 +167,7 @@ export const run = async () => {
 ```
 
 ### Deletando uma tabela
-
 A classe ddb_deletetable.js, conforme o código abaixo, serve para deletar uma tabela. Para isso basta alterar o parâmetro ```TableName``` com o nome da tabela que deseja deletar. No terminal, execute o comando ```node src/ddb_deletetable.js``` que contém a chamada da classe e a tabela será deletada.
-
 ```javascript
 export const params = {
   TableName: "Shows", // nome da tabela
