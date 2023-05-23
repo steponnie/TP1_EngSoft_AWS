@@ -123,6 +123,31 @@ export const params = {
     },
   };
 ```
+### Atualizando um item da tabela
+A classe ddb_updateitem.js pode modificar items já inseridos em uma tabela.
+
+```TableName``` indica o nome da tabela e os valores de ```Key``` são a chave primaria que identifica o item. Os valores da chave *não* podem ser modificados.
+
+```UpdateExpression``` indica qual tipo de modificação será feita(```SET```) , qual variável será modificada(```Description```) e para qual expressão ela será modificada(```value```).
+
+```ExpressionAttributeValues``` serve para designar tipo e valores para a expressão ```value```.
+
+Finalmente ```ReturnValues: "ALL_NEW"``` ira retornar todos os valores que foram modificados no item.
+```js
+export const params = {
+  TableName: "Shows",
+  Key: { // chave primaria
+    Season: { N: "1" },
+    Episode: { N: "1" },
+  },
+  UpdateExpression: "SET Description = :value",
+  ExpressionAttributeValues: {
+    ":value": { "S": "First Episode" },
+  },
+  ReturnValues: "ALL_NEW",
+};
+```
+
 
 ### Deletando uma tabela
 
