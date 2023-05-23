@@ -97,7 +97,7 @@ export const params = {
 };
 ```
 
-```
+```js
 export const params = {
   TableName: "Shows", // nome da tabela
   Item: { // item a ser inserido
