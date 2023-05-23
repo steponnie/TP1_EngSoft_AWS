@@ -96,6 +96,17 @@ export const params = {
   },
 };
 ```
+
+```
+export const params = {
+  TableName: "Shows", // nome da tabela
+  Item: { // item a ser inserido
+    "Season": {"N": "1"},
+    "Episode": {"N": "1"},
+    "Description": {"S": "Pilot"}
+  },
+};
+```
         -criando a tabela, em ddb_createtable.js:
             *em AttributeName: nome dos atributos
             *em AttributeType: tipo, pode ser N (numerico, ou S (string)
