@@ -30,22 +30,33 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 2- Deve ser criada uma acess key. Para isso voce deve....create access key em security credentials
 
-3- Você deve instalar a versão LTS do node(a versão mais estável no momento) em sua máquina clicando [aqui](https://nodejs.org/en/download). Depois de baixar, basta seguir os passos de instalação.
 
-4- Agora você deve baixar e intalar o AWS clicando [aqui](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+![image](https://github.com/steponnie/TP1_EngSoft_AWS/assets/61642301/4350ffe4-bc17-4446-b678-2426e7798051)
+
+
+3- Você deve instalar a versão LTS do node(a versão mais estável no momento) em sua máquina clicando [aqui](https://nodejs.org/en/download). Depois de baixar, basta seguir os passos de instalação para o seu sistema operacional.
+
+4- Agora você deve baixar o AWS clicando [aqui](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). Depois de baixar, basta seguir os passos de instalação para o seu sistema operacional.
 
 5- Você deve ter o VScode instalado no computador. Abra-o e inicialize um terminal. Nele digite os seguinte comando
+
 ```aws --version```
 
-##################################################################
-instalar node
+Este comando serve como confirmação da instalação do AWS e ele deve mostrar a versão instalada no seu computador, se a instalação tiver sido bem sucedida.
 
-colocando a access key da conta no codigo:
-        -download .cvs file
-       -baixar e instalar AWS CLI (coloca o link no roteiro)
-       -no powershell:
+
+no powershell:
                 * "aws --version" e dar enter
             * "aws configure" e dar enter
             * colocar a chave criada e dar enter
               * colocar a senha e dar enter
             * colocar regiao "us-east-1" e dar enter
+            
+            
+##################################################################      
+            instalar node
+
+colocando a access key da conta no codigo:
+        -download .cvs file
+       -baixar e instalar AWS CLI (coloca o link no roteiro)
+       -
