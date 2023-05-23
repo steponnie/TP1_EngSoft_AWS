@@ -28,10 +28,15 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 1- Primeiramente deve-se criar uma conta no dynamobd do AWS clicando [aqui](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.html).
 
-2- Deve ser criada uma acess key. Para isso voce deve....create access key em security credentials
+2- Deve ser criada uma acess key. Para isso voce deve acessar sua conta do AWS
+          
+          *Depois deve acessar opções de usuário;
+          *Acessar Security credentials;
+          *No campo Access keys deve clicar em create Access key;
+          *Por fim, deve anotar a Access key e a Secret access key e fazer o download do arquivo .csv file
+          
 
-
-![image](https://github.com/steponnie/TP1_EngSoft_AWS/assets/61642301/4350ffe4-bc17-4446-b678-2426e7798051)
+![image](https://github.com/steponnie/TP1_EngSoft_AWS/assets/61642301/85f829a8-fcca-436d-9629-681597b429e6)
 
 
 3- Você deve instalar a versão LTS do node(a versão mais estável no momento) em sua máquina clicando [aqui](https://nodejs.org/en/download). Depois de baixar, basta seguir os passos de instalação para o seu sistema operacional.
@@ -44,6 +49,7 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 Este comando serve como confirmação da instalação do AWS e ele deve mostrar a versão instalada no seu computador, se a instalação tiver sido bem sucedida.
 
+## Configurando o AWS
 
 no powershell:
                 * "aws --version" e dar enter
@@ -53,10 +59,4 @@ no powershell:
             * colocar regiao "us-east-1" e dar enter
             
             
-##################################################################      
-            instalar node
 
-colocando a access key da conta no codigo:
-        -download .cvs file
-       -baixar e instalar AWS CLI (coloca o link no roteiro)
-       -
