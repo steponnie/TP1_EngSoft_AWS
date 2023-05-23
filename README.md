@@ -113,7 +113,7 @@ export const params = {
 ### Deletando um item da tabela
 Na classe ddb_deleteitem.js está o comando para deletar um item.
 ```TableName``` indica o nome da tabela cujo item se quer deletar.
-Dentro de ```Key``` deve-se indicar a chave usada para identificar o item, nesse caso ```Season``` e ```Episode```.
+Dentro de ```Key``` deve-se indicar a chave usada para identificar o item, nesse caso ```Season``` e ```Episode```. No terminal, execute o comando ```node src/ddb_deleteitem.js``` que contém a chamada da classe e os itens serão deletados da tabela.
 ```js
 export const params = {
     TableName: "Shows", // nome da tabela
