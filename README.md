@@ -26,14 +26,20 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 ## Preparando o Ambiente
 
-1-Primeiramente deve-se criar uma conta no dynamobd do AWS clicando [aqui](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.html).
-2-criar acess key...
+1- Primeiramente deve-se criar uma conta no dynamobd do AWS clicando [aqui](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.html).
 
+2- Deve ser criada uma acess key. Para isso voce deve....create access key em security credentials
+
+3- Você deve instalar a versão LTS do node(a versão mais estável no momento) em sua máquina clicando [aqui](https://nodejs.org/en/download). Depois de baixar, basta seguir os passos de instalação.
+
+4- Agora você deve baixar e intalar o AWS clicando [aqui](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html).
+
+5- Você deve ter o VScode instalado no computador. Abra-o e inicialize um terminal. Nele digite os seguinte comando
+```aws --version```
 
 ##################################################################
-criar conta no dynamobd do aws (colocar o link de cadastro)
 instalar node
-create access key em security credentials
+
 colocando a access key da conta no codigo:
         -download .cvs file
        -baixar e instalar AWS CLI (coloca o link no roteiro)
