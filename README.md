@@ -61,7 +61,7 @@ Abra o terminal e digite o seguinte comando ```aws configure```
 Pronto, o AWS foi configurado!
 
 ## Executando o código 
-
+### Criando uma tabela
 Abra o projeto no VScode. Na classe ddb_createtable.js, conforme o código abaixo, altere os atributos  ```AttributeName```, ```AttributeType``` e ```tableName``` para criar a tabela no AWS. No terminal, execute o comando  ```node src/ddb_createtable.js``` que contém a chamada da classe e a tabela será criada. 
  
 ```javascript
