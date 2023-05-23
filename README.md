@@ -151,6 +151,8 @@ export const params = {
 
 ### Deletando uma tabela
 
+A classe ddb_deletetable.js, conforme o código abaixo, serve para deletar uma tabela. Para isso basta alterar o parâmetro ```TableName``` com o nome da tabela que deseja deletar. No terminal, execute o comando ```node src/ddb_deletetable.js``` que contém a chamada da classe e a tabela será deletada.
+
 ```javascript
 export const params = {
   TableName: "Shows", // nome da tabela
