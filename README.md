@@ -65,6 +65,38 @@ Pronto, o AWS foi configurado!
 __________________________________________________________________________________
 RASCUNHO 
 no vscode:
+'''
+export const params = {
+  AttributeDefinitions: [
+    {
+      AttributeName: "Season", // nome do atributo
+      AttributeType: "N", // tipo do atributo
+    },
+    {
+      AttributeName: "Episode", // nome do atributo
+      AttributeType: "N", // tipo do atributo
+    },
+  ],
+  KeySchema: [
+    {
+      AttributeName: "Season", // primeiro atributo
+      KeyType: "HASH",
+    },
+    {
+      AttributeName: "Episode", // segundo atributo
+      KeyType: "RANGE",
+    },
+  ],
+  ProvisionedThroughput: {
+    ReadCapacityUnits: 1,
+    WriteCapacityUnits: 1,
+  },
+  TableName: "Shows", // nome da tabela
+  StreamSpecification: {
+    StreamEnabled: false,
+  },
+};
+'''
         -criando a tabela, em ddb_createtable.js:
             *em AttributeName: nome dos atributos
             *em AttributeType: tipo, pode ser N (numerico, ou S (string)
