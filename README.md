@@ -168,7 +168,7 @@ export const params = {
   };
 ```
 ### Listando todas as tabelas
-A classe ddb_listtable.js, conforme o código abaixo, serve para listar todas as tabelas que estão no AWS. Para isso basta executar o comando node src/ddb_listtable.js que contém a chamada da classe e, assim, todas as tabelas serão listadas.
+A classe ddb_listtable.js, conforme o código abaixo, serve para listar todas as tabelas que estão no AWS. Para isso basta executar o comando ```node src/ddb_listtable.js``` que contém a chamada da classe e, assim, todas as tabelas serão listadas.
 ```js
 import { ListTablesCommand } from "@aws-sdk/client-dynamodb";
 import { ddbClient } from "./libs/ddbClient.js";
