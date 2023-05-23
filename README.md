@@ -65,7 +65,7 @@ Pronto, o AWS foi configurado!
 __________________________________________________________________________________
 RASCUNHO 
 no vscode:
-'''
+```
 export const params = {
   AttributeDefinitions: [
     {
@@ -96,7 +96,7 @@ export const params = {
     StreamEnabled: false,
   },
 };
-'''
+```
         -criando a tabela, em ddb_createtable.js:
             *em AttributeName: nome dos atributos
             *em AttributeType: tipo, pode ser N (numerico, ou S (string)
