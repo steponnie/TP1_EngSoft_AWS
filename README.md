@@ -133,6 +133,8 @@ A classe ddb_updateitem.js pode modificar items já inseridos em uma tabela.
 ```ExpressionAttributeValues``` serve para designar tipo e valores para a expressão ```value```.
 
 Finalmente ```ReturnValues: "ALL_NEW"``` ira retornar todos os valores que foram modificados no item.
+
+No terminal, execute o comando ```node src/ddb_updateitem.js``` para executar a classe.
 ```js
 export const params = {
   TableName: "Shows",
