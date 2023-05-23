@@ -61,7 +61,9 @@ Abra o terminal e digite o seguinte comando ```aws configure```
 Pronto, o AWS foi configurado!
 
 ## Executando o código 
-Para verificar as alterações no AWS, você deve acessar sua conta e clicar em DynamoDB. Na próxima página, para vizualizar as tabelas você deve clicar em ```Tables```, localizado no canto esquerdo da tela.
+Para verificar as alterações no AWS, você deve acessar sua conta e clicar em DynamoDB. Na próxima página, para vizualizar as tabelas você deve clicar em ```Tables```, localizado no canto esquerdo da tela. 
+
+Primeiro você deve executar o comando ```npm i @aws-sdk/client-sns``` no terminal, para garantir que você tem a versão mais atual do sdk.
 
 ### Criando uma tabela
 Abra o projeto no VScode. Na classe ddb_createtable.js, conforme o código abaixo, altere os atributos  ```AttributeName```, ```AttributeType``` e ```tableName``` para criar a tabela no AWS. No terminal, execute o comando  ```node src/ddb_createtable.js``` que contém a chamada da classe e a tabela será criada. 
