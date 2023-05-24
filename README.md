@@ -118,7 +118,7 @@ export const params = {
   },
 };
 ```
-Nesse exemplo foram inseridas apenas chaves primárias, mas outros atributos podem ser inseridos.
+Nesse exemplo foram inseridas duas chaves primárias, mas outros atributos podem ser inseridos.
 
 ### Deletando um item da tabela
 Na classe ddb_deleteitem.js está o comando para deletar um item.
