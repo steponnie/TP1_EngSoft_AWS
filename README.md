@@ -2,8 +2,10 @@
 
 ## Disciplina: Engenharia de Software
 ## Alunos: 
-           * Stéphanie Fonseca de Oliveira Gomes Magalhães
-           * Luísa Oliveira Vicente
+           * Stéphanie Fonseca de Oliveira Gomes Magalhães            20203001401
+           * Luísa Oliveira Vicente                                   20203007951
+           * Eduardo Gomes de Freitas                                 20203002249
+           * Leonardo Gonçalves Grossi                                20203003854
 
 
 Este repositório contém um exemplo de uso da plataforma de serviços de computação em nuvem da Amazon, o Amazon Web Services (AWS).
@@ -26,7 +28,7 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 ## Preparando o Ambiente
 
-1- Primeiramente deve-se criar uma conta no dynamobd do AWS clicando [aqui](https://docs.aws.amazon.com/sdk-for-javascript/v3/developer-guide/dynamodb-examples-using-tables.html).
+1- Primeiramente deve-se criar uma conta no dynamobd do AWS clicando [aqui](https://aws.amazon.com/pt/).
 
 2- Deve ser criada uma acess key. Para isso voce deve acessar sua conta do AWS
           
@@ -43,7 +45,7 @@ Agora que entendemos os fundamentos da AWS, podemos prosseguir para exemplo prá
 
 4- Agora você deve baixar o AWS clicando [aqui](https://docs.aws.amazon.com/cli/latest/userguide/getting-started-install.html). Depois de baixar, basta seguir os passos de instalação para o seu sistema operacional.
 
-5- Você deve ter o VScode instalado no computador. Abra-o e inicialize um terminal. Nele digite os seguinte comando ```aws --version```
+5- É recomendado ter o VScode instalado no computador pois ele possui um terminal integrado, o que facilita a execução do código. Abra-o e inicialize um terminal. Nele digite os seguinte comando ```aws --version```
 
 Este comando serve como confirmação da instalação do AWS e ele deve mostrar a versão instalada no seu computador, se a instalação tiver sido bem sucedida.
 
@@ -53,7 +55,7 @@ Abra o terminal e digite o seguinte comando ```aws configure```
                      
           *Colocar a Access key criada e clicar enter;
           *Colocar a Secret access key criada e clicar enter;
-          *Colocar a região "us-east-1" e clicar enter;
+          *Selecionar uma região(por exemplo: "us-east-1") e clicar enter;
           *Saltar o output format clicando no enter.
             
 ![image](https://github.com/steponnie/TP1_EngSoft_AWS/assets/61642301/de9ecd33-1c0a-47c1-9cbe-326c8b96963d)
@@ -61,12 +63,14 @@ Abra o terminal e digite o seguinte comando ```aws configure```
 Pronto, o AWS foi configurado!
 
 ## Executando o código 
-Para verificar as alterações no AWS, você deve acessar sua conta e clicar em DynamoDB. Na próxima página, para vizualizar as tabelas você deve clicar em ```Tables```, localizado no canto esquerdo da tela. 
+Antes de tudo, clone o repositório no computador para poder executar o código.
+
+Para verificar as alterações no AWS, você deve acessar sua conta e clicar em ```DynamoDB```. Na próxima página, para vizualizar as tabelas você deve clicar em ```Tables```, localizado no canto esquerdo da tela. As tabelas são visíveis em ```Explore items```.
 
 Primeiro você deve executar o comando ```npm i @aws-sdk/client-sns``` no terminal, para garantir que você tem a versão mais atual do sdk.
 
 ### Criando uma tabela
-Abra o projeto no VScode. Na classe ddb_createtable.js, conforme o código abaixo, altere os atributos  ```AttributeName```, ```AttributeType``` e ```tableName``` para criar a tabela no AWS. No terminal, execute o comando  ```node src/ddb_createtable.js``` que contém a chamada da classe e a tabela será criada. 
+Abra o projeto na IDE ou compile diretamente pelo terminal. Na classe ddb_createtable.js, conforme o código abaixo, altere os atributos  ```AttributeName```, ```AttributeType``` e ```tableName``` para criar a tabela no AWS. No terminal, execute o comando  ```node src/ddb_createtable.js``` que contém a chamada da classe e a tabela será criada. 
  
 ```javascript
 export const params = {
@@ -100,6 +104,8 @@ export const params = {
   },
 };
 ```
+Nesse exemplo dois atributos foram usados como chaves primárias, mas esse número pode variar de acordo com a tabela.
+
 ### Inserindo um item na tabela
 Para adicionar um item na tabela, abra a classe ddb_putitem.js, conforme o código abaixo, substitua o nome da tabela em ```TableName``` e altere os parâmetros do construtor ```Item``` de acordo com a tabela criada anteriormente. No terminal, execute o comando ```node src/ddb_putitem.js``` que contém a chamada da classe e os itens serão adicionados à tabela. 
 ```js
@@ -112,6 +118,7 @@ export const params = {
   },
 };
 ```
+Nesse exemplo foram inseridas apenas chaves primárias, mas outros atributos podem ser inseridos.
 
 ### Deletando um item da tabela
 Na classe ddb_deleteitem.js está o comando para deletar um item.
@@ -203,3 +210,6 @@ export const run = async () => {
 };
 run();
 ```
+
+## Considerações finais
+*podem ser feitas mas escolhemos as mais basicas de bancos de dados
