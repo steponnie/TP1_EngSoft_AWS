@@ -212,4 +212,10 @@ run();
 ```
 
 ## Considerações finais
-*podem ser feitas mas escolhemos as mais basicas de bancos de dados
+Neste roteiro, exploramos os principais serviços e conceitos da Amazon Web Services (AWS), uma das principais plataformas de computação em nuvem disponíveis atualmente. Ao longo do documento, discutimos diversas áreas, como a configuração inicial da conta, serviços de armazenamento e principalmente os serviços de banco de dados.
+
+Outras operações podem ser executadas, mas focamos nas principais que foram: criação de tabelas; inserção de itens nas tabelas; busca de itens na tabela; atualização de dados da tabela; deletar dados da tabela; listar tabelas; e deletar tabelas. Porém, outras poderiam ser realizadas como por exemplo criar colunas ou excluir colunas.
+
+Este roteiro é apenas um ponto de partida para explorar a ampla gama de serviços oferecidos pela AWS. À medida que a plataforma continua evoluindo, é essencial acompanhar as atualizações e novos recursos lançados pela Amazon.
+
+Lembre-se de que a AWS é uma ferramenta poderosa, mas também complexa. Portanto, para se familiarizar com ela é necessário tempo de estudo e muita prática.
