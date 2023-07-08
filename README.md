@@ -8,6 +8,10 @@
            * Leonardo Gonçalves Grossi                                20203003854
 
 
+### Link para o vídeo de apresentação da Aplicação:
+https://youtu.be/iggiFzU4nuI
+
+
 Este repositório contém um exemplo de uso da plataforma de serviços de computação em nuvem da Amazon, o Amazon Web Services (AWS).
 
 O exemplo foi projetado para ser usado em uma aula prática sobre serviços de computação em nuvem.
